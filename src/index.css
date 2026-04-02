@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Geist+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 20% 97%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 174 85% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 20% 94%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 195 15% 92%;
+    --muted-foreground: 215 10% 50%;
+
+    --accent: 350 88% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 174 85% 30%;
+
+    --radius: 0.75rem;
+
+    --query-bg: 220 30% 15%;
+    --query-text: 198 80% 70%;
+    --query-label: 215 15% 60%;
+
+    --warm-orange: 25 95% 55%;
+    --warm-yellow: 45 95% 55%;
+    --success: 160 60% 40%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 174 85% 30%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 195 20% 94%;
+    --sidebar-accent-foreground: 215 25% 27%;
+    --sidebar-border: 210 15% 88%;
+    --sidebar-ring: 174 85% 30%;
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 195 15% 92%;
+    --card: 220 25% 12%;
+    --card-foreground: 195 15% 92%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 195 15% 92%;
+    --primary: 174 85% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 195 15% 92%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 350 88% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 174 85% 38%;
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 195 15% 92%;
+    --sidebar-primary: 174 85% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 195 15% 92%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 174 85% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  code, .font-mono {
+    font-family: 'Geist Mono', monospace;
+  }
+}
+
+@layer components {
+  .query-panel {
+    background: hsl(var(--query-bg));
+    color: hsl(var(--query-text));
+    font-family: 'Geist Mono', monospace;
+    border-bottom: 3px solid hsl(var(--primary));
+  }
+
+  .btn-pill {
+    @apply rounded-full px-6 py-2.5 font-medium transition-all duration-200;
+  }
+
+  .card-kindred {
+    @apply rounded-2xl border-0 shadow-md transition-transform duration-200 bg-card;
+  }
+
+  .card-kindred:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.12);
+  }
+
+  .stat-card {
+    @apply rounded-2xl p-6 text-center bg-card shadow-sm border border-border;
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(174 70% 40%));
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent)), hsl(350 80% 65%));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.08), hsl(var(--accent) / 0.05));
+  }
+}
