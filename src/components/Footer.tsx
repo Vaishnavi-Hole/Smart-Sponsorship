@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 text-center space-y-2">
         <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
           <Heart className="h-5 w-5 fill-accent text-accent" />
-          Kindred Path NGO
+          Bright Paths Pro
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; 2024 Kindred Path NGO. Smart Child Sponsorship Management System — DBMS Demonstration.
+          &copy; 2024 Bright Paths Pro. Child Sponsorship Management System — DBMS Demonstration.
         </p>
       </div>
     </footer>

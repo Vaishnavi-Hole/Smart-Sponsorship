@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="animate-fade-in py-12 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-foreground mb-3">About Kindred Path</h1>
+          <h1 className="text-3xl font-bold text-foreground mb-3">About Bright Paths Pro</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We are a non-profit organization dedicated to empowering underprivileged children through education, healthcare, and compassionate sponsorship.
           </p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="card-kindred bg-card p-8 text-center">
           <h2 className="text-xl font-bold text-foreground mb-3">DBMS Demonstration Project</h2>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            This application is a Smart Child Sponsorship Management System built to demonstrate key DBMS operations including INSERT, UPDATE, DELETE, SELECT with WHERE, ORDER BY, GROUP BY, and JOIN queries. The SQL Query Display Panel at the top shows each query as it executes.
+            This application is a Child Sponsorship Management System built to demonstrate key DBMS operations including INSERT, UPDATE, DELETE, SELECT with WHERE, ORDER BY, GROUP BY, and JOIN queries. The SQL Query Display Panel at the top shows each query as it executes.
           </p>
         </div>
       </div>

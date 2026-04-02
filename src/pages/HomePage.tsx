@@ -20,13 +20,13 @@ export default function HomePage() {
       <section className="gradient-hero py-20 px-4">
         <div className="container mx-auto text-center max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-pill px-4 py-1.5 text-sm font-medium mb-6">
-            <Star className="h-4 w-4" /> Smart Child Sponsorship System
+            <Star className="h-4 w-4" /> Child Sponsorship Platform
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
             Every Child Deserves a <span className="text-primary">Bright Future</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-            Kindred Path connects generous sponsors with children in need. Your support provides education, healthcare, and hope.
+            Bright Paths Pro connects generous sponsors with children in need. Your support provides education, healthcare, and hope.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link to="/register" className="btn-pill bg-accent text-accent-foreground text-base hover:opacity-90 inline-flex items-center gap-2">

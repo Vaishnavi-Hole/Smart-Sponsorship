@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-primary font-bold text-xl">
           <Heart className="h-6 w-6 fill-accent text-accent" />
-          KINDRED PATH
+          BRIGHT PATHS PRO
         </Link>
 
         {/* Desktop */}
